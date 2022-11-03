@@ -6,6 +6,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "car")
 public class Car {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -13,8 +14,10 @@ public class Car {
 
     @Column(name = "model")
     private String model;
+
     @Column(name = "series")
     private int series;
+
     @OneToOne(mappedBy = "car")
     private User user;
 
