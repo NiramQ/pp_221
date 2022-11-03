@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="Default" persistenceXmlPath="2.2.1. spring_hibernate/pom.xml">
+        <packages>
+          <package value="hiber.config" />
+          <package value="hiber" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
