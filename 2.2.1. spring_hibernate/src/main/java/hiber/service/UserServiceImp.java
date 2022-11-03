@@ -19,8 +19,8 @@ public class UserServiceImp implements UserService {
    public void setUserDao(UserDao userDao) {
       this.userDao = userDao;
    }
-
    @Override
+   @Transactional
    public void add(User user) {
       userDao.add(user);
    }
