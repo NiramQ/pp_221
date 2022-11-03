@@ -12,9 +12,6 @@ public class User {
     @Column(name = "id")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "car", referencedColumnName = "id")
-    private Car car;
     @Column(name = "name")
     private String firstName;
 
@@ -23,6 +20,9 @@ public class User {
 
     @Column(name = "email")
     private String email;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "car", referencedColumnName = "id")
+    private Car car;
 
     public User() {
     }

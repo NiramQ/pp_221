@@ -1,7 +1,6 @@
 package hiber;
 
 import hiber.config.AppConfig;
-import hiber.model.Car;
 import hiber.model.User;
 import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -31,7 +30,7 @@ public class MainApp {
       userService.add(petya);
        */
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getListUsers();
       for (User user : users) {
          System.out.println("Id = "+user.getId());
          System.out.println("First Name = "+user.getFirstName());
